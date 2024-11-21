@@ -9,7 +9,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Language : <code>Python3</code></b> 🐍\n<b>○ Version : v1 🫏</b>\n<b>○ Developer : <code>@savoryrabbit</code> 😼</b>",
+            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/LUFFY1JOYBOY>Ŧrαfͥαlͣgͫαrαw</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Anime_Madness>ᴀɴɪᴍᴇ ᴍᴀᴅɴᴇss</a>\n◈ ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/Ongoing_Madness>ᴏɴɢᴏɪɴɢ ᴍᴀᴅɴᴇss</a>\n◈ ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Cultured_Madness>ᴄᴜʟᴛᴜʀᴇᴅ ᴍᴀᴅɴᴇss</a>\n◈ ᴍᴏᴠɪᴇ : <a href=https://dashboard.heroku.com>ᴍᴀᴅɴᴇss ᴍᴏᴠɪᴇ</a>\n◈ ᴡᴇʙ sᴇʀɪᴇs: <a href=https://t.me/Series_Madness>sᴇʀɪᴇs ᴍᴀᴅɴᴇss</a>\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
