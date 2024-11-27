@@ -1,4 +1,5 @@
 import asyncio
+import START_PIC
 import os
 import random
 import sys
