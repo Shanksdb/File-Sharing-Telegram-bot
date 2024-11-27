@@ -49,6 +49,8 @@ OWNER_TAG = os.environ.get("OWNER_TAG", "LUFFY1JOYBOY")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "0"))
 
+START_PIC = get_config_value("START_IMG", "https://envs.sh/_wI.jpg")
+
 
 #Shortner (token system) 
 """
