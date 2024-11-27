@@ -490,6 +490,18 @@ async def restart(client, message):
         print(e)
 
 
+await message.reply_photo(
+    photo=START_PIC,
+    caption=START_MSG.format(
+        first=message.from_user.first_name,
+        last=message.from_user.last_name,
+        username=None if not message.from_user.username else message.from_user.username,
+        mention=message.from_user.mention,
+        id=message.from_user.id
+    ),
+    reply_markup=reply_markup,
+)
+
 if USE_PAYMENT:
     @Bot.on_message(filters.command('add_prem') & filters.private & filters.user(ADMINS))
     async def add_user_premium_command(client: Bot, message: Message):
