@@ -83,7 +83,7 @@ USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" e
 #UPI ID
 UPI_ID = os.environ.get("UPI_ID", "yashpirateking@fam")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://t.me/LUFFY1JOYBOY")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://freeimage.host/i/20dMngS")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
