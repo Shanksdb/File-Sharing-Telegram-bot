@@ -45,7 +45,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "premium":
         await query.message.edit_text(
-            text=f"<b>Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n1 Month - INR 249/$7\n3 Months - INR 349/$15\n6 Months - INR 599/$39\n9 Months - INR 749/$49\n12 Months - INR 999/$79\n\nWant To Buy?\nPay Using UPI Itsnoor@fam\nSend Screenshot to @arindam69x\n\nWe Have Limited Seats For Premium Users</b>",
+            text=f"<b>ᴘʀᴇᴍɪᴜᴍ ʙᴇɴᴇғɪᴛs & ᴘᴇʀᴋs\nᴅɪʀᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs, ɴᴏ ᴀᴅ ʟɪɴᴋs\nsᴘᴇᴄɪᴀʟ ᴀᴄᴄᴇss ɪɴ ᴇᴠᴇɴᴛs\n\nᴘʀɪᴄɪɴɢ ʀᴀᴛᴇs\n𝟷 ᴍᴏɴᴛʜ - ɪɴʀ 𝟸𝟺𝟿/$7\n𝟹 ᴍᴏɴᴛʜs - ɪɴʀ 349/$15\n𝟼 ᴍᴏɴᴛʜs - ɪɴʀ 𝟻𝟿𝟿/$39\n𝟿 ᴍᴏɴᴛʜs - ɪɴʀ 749/$49\n𝟷𝟸 ᴍᴏɴᴛʜs - ɪɴʀ 999/$79\n\nᴡᴀɴᴛ ᴛᴏ ʙᴜʏ?\nᴅᴍ @LUFFY1JOYBOY\nsᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ to @arindam69x\n\nWe Have ʟɪᴍɪᴛᴇᴅ sᴇᴀᴛs ғᴏʀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀs</b>",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
