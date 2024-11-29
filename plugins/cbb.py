@@ -1,42 +1,68 @@
-from pyrogram import __version__
+from pyrogram import Client 
 from bot import Bot
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-
-from config import PRICE1, PRICE2, PRICE3, PRICE4, PRICE5, UPI_ID, UPI_IMAGE_URL, SCREENSHOT_URL
+from config import OWNER_ID, ABOUT_TXT, HELP_TXT, START_MSG
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from database.database import add_user, del_user, full_userbase, present_user
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "help":
         await query.message.edit_text(
-            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/LUFFY1JOYBOY>Ŧrαfͥαlͣgͫαrαw</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Anime_Madness>ᴀɴɪᴍᴇ ᴍᴀᴅɴᴇss</a>\n◈ ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/Ongoing_Madness>ᴏɴɢᴏɪɴɢ ᴍᴀᴅɴᴇss</a>\n◈ ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Cultured_Madness>ᴄᴜʟᴛᴜʀᴇᴅ ᴍᴀᴅɴᴇss</a>\n◈ ᴍᴏᴠɪᴇ : <a href=https://dashboard.heroku.com>ᴍᴀᴅɴᴇss ᴍᴏᴠɪᴇ</a>\n◈ ᴡᴇʙ sᴇʀɪᴇs: <a href=https://t.me/Series_Madness>sᴇʀɪᴇs ᴍᴀᴅɴᴇss</a>\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
-            disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
+            text=HELP_TXT.format(first=query.from_user.first_name),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+                        InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')
                     ]
                 ]
             )
         )
+    elif data == "about":
+        await query.message.edit_text(
+            text=ABOUT_TXT.format(first=query.from_user.first_name),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+                     InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close')]
+                ]
+            )
+        )
+    elif data == "start":
+        await query.message.edit_text(
+            text=START_MSG.format(first=query.from_user.first_name),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
+                 InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')],
+                [InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Cultured_Madness'),
+                 InlineKeyboardButton('ʜᴇɴᴛᴀɪ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+0VRiOl0R0n02NzY1')],
+                [InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
+            ])
+        )
+    elif data == "premium":
+        await query.message.edit_text(
+            text=f"<b>Premium Benefits & Perks\nDirect Channel Links, No Ad Links\nSpecial Access In Events\n\nPricing Rates\n1 Month - INR 249/$7\n3 Months - INR 349/$15\n6 Months - INR 599/$39\n9 Months - INR 749/$49\n12 Months - INR 999/$79\n\nWant To Buy?\nPay Using UPI Itsnoor@fam\nSend Screenshot to @arindam69x\n\nWe Have Limited Seats For Premium Users</b>",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Owner", url="https://t.me/LUFFY1JOYBOY"),
+                        InlineKeyboardButton("Main Channel", url="https://t.me/Cultured_Madness")
+                    ],
+                    [
+                        InlineKeyboardButton("🔒 Close", callback_data="close")
+                    ]
+                ]
+            )
+        )
+
     elif data == "close":
         await query.message.delete()
         try:
             await query.message.reply_to_message.delete()
         except:
             pass
-    elif data == "buy_prem":
-        await query.message.edit_text(
-            text=f"👋 {query.from_user.username}\n\n🎖️ Available Plans :\n\n● {PRICE1} rs For 7 Days Prime Membership\n\n● {PRICE2} rs For 1 Month Prime Membership\n\n● {PRICE3} rs For 3 Months Prime Membership\n\n● {PRICE4} rs For 6 Months Prime Membership\n\n● {PRICE5} rs For 1 Year Prime Membership\n\n\n💵 UPI ID -  <code>{UPI_ID}</code>\n\n\n📸 QR - ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ ({UPI_IMAGE_URL})\n\n♻️ If payment is not getting sent on above given QR code then inform admin, he will give you new QR code\n\n\n‼️ Must Send Screenshot after payment",
-            disable_web_page_preview=True,
-            reply_markup = InlineKeyboardMarkup(
-                [   
-                    [
-                        InlineKeyboardButton("Send Payment Screenshot(ADMIN) 📸", url=(SCREENSHOT_URL))
-                    ],
-                    [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
-                    ]
-                ]
-            )
-            )
