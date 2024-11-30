@@ -9,7 +9,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/LUFFY1JOYBOY>Ŧrαfͥαlͣgͫαrαw</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Anime_Madness>ᴀɴɪᴍᴇ ᴍᴀᴅɴᴇss</a>\n◈ ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/Ongoing_Madness>ᴏɴɢᴏɪɴɢ ᴍᴀᴅɴᴇss</a>\n◈ ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/Cultured_Madness>ᴄᴜʟᴛᴜʀᴇᴅ ᴍᴀᴅɴᴇss</a>\n◈ ᴍᴏᴠɪᴇ : <a href=https://dashboard.heroku.com>ᴍᴀᴅɴᴇss ᴍᴏᴠɪᴇ</a>\n◈ ᴡᴇʙ sᴇʀɪᴇs: <a href=https://t.me/Series_Madness>sᴇʀɪᴇs ᴍᴀᴅɴᴇss</a>\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
+            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/LUFFY1JOYBOY>Ŧrαfͥαlͣgͫαrαw</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Cultured_Madness>ᴄᴜʟᴛᴜʀᴇᴅ ᴍᴀᴅɴᴇss</a>\n◈ ʜᴇɴᴛᴀɪ ᴍᴀᴅɴᴇss: <a href=https://t.me/+0VRiOl0R0n02NzY1>ʜᴇɴᴛᴀɪ ᴍᴀᴅɴᴇss</a>\n◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href=https://t.me/+7QnVvptszo5hYzll>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n◈ ᴍᴏᴠɪᴇ : <a href=https://Madness_Movie>ᴍᴀᴅɴᴇss ᴍᴏᴠɪᴇ</a>\n◈ ᴡᴇʙ sᴇʀɪᴇs: <a href=https://t.me/Series_Madness>sᴇʀɪᴇs ᴍᴀᴅɴᴇss</a>\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
