@@ -24,7 +24,7 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME 🌺</b>\n{upti
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "Don't send me messages directly I'm only File Share bot! 📌")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7979065732:AAEjHbSgV-ugeW166MLReui_6MFyJr1fFIE") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7243381160:AAHtkJ4HSbxhcnphZzv9oLPl-_GnnHMGARI") 
 #your api id from https://my.telegram.org/apps
 APP_ID = int(os.environ.get("APP_ID", "28713982"))
 #your api hash from https://my.telegram.org/apps
@@ -36,16 +36,16 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7195990500"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://drapixstore:Y7DJWJCCpBQClI5o@cluster0.fq7ee6x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Yuuichi:Yuuichi@cluster0.vuuobqn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "ayanedb")
+DB_NAME = os.environ.get("DB_NAME", "saitamadb")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. 💾")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʟᴏᴠᴇ ʜᴇɴᴛᴀɪ ? ɪ ᴀᴍ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴡᴀᴛᴄʜ ᴡʜᴀᴛ ʏᴏᴜ'ʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ.</blockquote>\n\nᴄʜᴇᴄᴋ ᴏᴜᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀᴛ <a href='https://t.me/Cultured_Madness'>ᴄᴜʟᴛᴜʀᴇᴅ ᴍᴀᴅɴᴇss👇</b>")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "LUFFY1JOYBOY")
+OWNER_TAG = os.environ.get("OWNER_TAG", "Saitama_One_Punchh")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "0"))
 
@@ -81,9 +81,9 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/c/1987260753/248")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "yashpirateking@fam")
+UPI_ID = os.environ.get("UPI_ID", "8979194557@mbk")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://freeimage.host/i/20dMngS")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://envs.sh/Y5d.jpg")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
