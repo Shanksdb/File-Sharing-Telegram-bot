@@ -43,9 +43,9 @@ DB_NAME = os.environ.get("DB_NAME", "ayanedb")
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
-START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʟᴏᴠᴇ ᴀɴɪᴍᴇ? ɪ ᴀᴍ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴡᴀᴛᴄʜ ᴡʜᴀᴛ ʏᴏᴜ'ʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ.</blockquote>\n\nᴄʜᴇᴄᴋ ᴏᴜᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ @Cultured_Galaxy ꜰᴏʀ ᴍᴏʀᴇ!👇</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʟᴏᴠᴇ ᴀɴɪᴍᴇ? ɪ ᴀᴍ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴡᴀᴛᴄʜ ᴡʜᴀᴛ ʏᴏᴜ'ʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ.</blockquote>\n\nᴄʜᴇᴄᴋ ᴏᴜᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ @Adult_Madness ꜰᴏʀ ᴍᴏʀᴇ!👇</b>")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "Anime_Contact_HelpBot")
+OWNER_TAG = os.environ.get("OWNER_TAG", "Official_Pirate_King_Luffy")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "0"))
 
