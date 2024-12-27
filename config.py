@@ -81,9 +81,9 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/How_To_Download_From_World/14")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Anime_Contact_HelpBot")
+UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Official_Pirate_King_Luffy")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://Anime_Contact_HelpBot")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://Official_Pirate_King_Luffy")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
