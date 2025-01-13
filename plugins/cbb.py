@@ -9,7 +9,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=http://t.me/AdultPremium_Pro_Bot>Ʉ₦₭Ø₩₦</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/Adult_Madness>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n◈ ʜᴇɴᴛᴀɪ : <a href=https://t.me/+0VRiOl0R0n02NzY1>ʜᴇɴᴛᴀɪ</a>\n◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href=https://t.me/+7QnVvptszo5hYzll>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n◈  :\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
+            text = f"<b> ⟦⟧ Hi There Vro!💫\n┏━━━━━━━❪❂❫━━━━━━━━\n◈ ᴄʀᴇᴀᴛᴏʀ: <a href=http://t.me/Ayanakaji>Ʉ₦₭Ø₩₦</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/hentai_hindi_dub>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n◈ ʜᴇɴᴛᴀɪ : <a href=https://t.me/+fdYEeYOudS8yMjY1>ʜᴇɴᴛᴀɪ</a>\n◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href=https://t.me/+McYaSyY87qgyZDNl>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n◈  :\n┗━━━━━━━❪❂❫━━━━━━━━</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
