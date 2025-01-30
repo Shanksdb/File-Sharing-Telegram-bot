@@ -32,7 +32,7 @@ API_HASH = os.environ.get("API_HASH", "237e15f7c006b10b4fa7c46fee7a5377")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002436812797"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "5792873052"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6382307516"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
@@ -60,10 +60,10 @@ https://dashboard.shareus.io/
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "speedlinkurl.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortxlinks.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "9d0490e2d8721a52f78b3347d0a7894eb378196d")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "6e87bba17c88b9d42683509bcdf878f72240e462")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -81,9 +81,9 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/hentai_hindi_dubbed/72")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT","TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Ayanakaji")
+UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Animated_Series_in_Hindi_Dubbed")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://t.me//Ayanakaji")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://t.me//Animated_Series_in_Hindi_Dubbed")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
