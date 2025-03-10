@@ -1,23 +1,26 @@
-from pyrogram import __version__
-from bot import Bot
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 from config import PRICE1, PRICE2, PRICE3, PRICE4, PRICE5, UPI_ID, UPI_IMAGE_URL, SCREENSHOT_URL
 
-@Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery):
+@Client.on_callback_query()
+async def cb_handler(client, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Language : <code>Python3</code></b> 🐍\n<b>○ Version : v1 🫏</b>\n<b>○ Developer : <code>@savoryrabbit</code> 😼</b>",
-            disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
-                    ]
-                ]
-            )
+            text=(
+                "<b> ⟦⟧ Hi There Vro!💫\n"
+                "┏━━━━━━━❪❂❫━━━━━━━━\n"
+                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='http://t.me/Ayanjdjdakaji'>Ʉ₦₭Ø₩₦</a>\n"
+                "◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/hentaii_hindi_dub'>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n"
+                "◈ ʜᴇɴᴛᴀɪ : <a href='https://t.me/+fdYEeYOudS8yMjY1n'>ʜᴇɴᴛᴀɪ</a>\n"
+                "◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href='https://t.me/+McYaSyY87qgyZDNl'>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n"
+                "┗━━━━━━━❪❂❫━━━━━━━━</b>"
+            ),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔒 Close", callback_data="close")]
+            ])
         )
     elif data == "close":
         await query.message.delete()
@@ -27,16 +30,33 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             pass
     elif data == "buy_prem":
         await query.message.edit_text(
-            text=f"👋 {query.from_user.username}\n\n🎖️ Available Plans :\n\n● {PRICE1} rs For 7 Days Prime Membership\n\n● {PRICE2} rs For 1 Month Prime Membership\n\n● {PRICE3} rs For 3 Months Prime Membership\n\n● {PRICE4} rs For 6 Months Prime Membership\n\n● {PRICE5} rs For 1 Year Prime Membership\n\n\n💵 UPI ID -  <code>{UPI_ID}</code>\n\n\n📸 QR - ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ ({UPI_IMAGE_URL})\n\n♻️ If payment is not getting sent on above given QR code then inform admin, he will give you new QR code\n\n\n‼️ Must Send Screenshot after payment",
+            text=(
+                f"👋 ᴋᴏɴɪᴄʜɪᴡᴀ {query.from_user.username}\n\n"
+                "<b>ᴘʀᴇᴍɪᴜᴍ ʙᴇɴɪғɪᴛs ᴀɴᴅ ᴘʀɪᴄᴇs</b>\n"
+                "• ᴅɪʀᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋs\n"
+                "• ɴᴏ ᴀᴅ ʟɪɴᴋs\n"
+                "• sᴘᴇᴄɪᴀʟ ᴀᴄᴄᴇss ɪɴ ᴇᴠᴇɴᴛs\n\n"
+                "<b>ᴘʀɪᴄɪɴɢ ʀᴀᴛᴇs:</b>\n"
+                f"● {PRICE1} rs ғᴏʀ 7 ᴅᴀʏs ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀsʜɪᴘ\n"
+                f"● {PRICE2} rs ғᴏʀ 1 ᴍᴏɴᴛʜ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀsʜɪᴘ\n"
+                f"● {PRICE3} rs ғᴏʀ 3 ᴍᴏɴᴛʜs ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀsʜɪᴘ\n"
+                f"● {PRICE4} rs ғᴏʀ 6 ᴍᴏɴᴛʜs ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀsʜɪᴘ\n"
+                f"● {PRICE5} rs ғᴏʀ 1 ʏᴇᴀʀ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀsʜɪᴘ\n\n"
+                "<b>𝚅𝙸𝙿 / ʙᴇɴɪғɪᴛs</b>\n"
+                "• ɴᴏ ʟɪɴᴋ ꜱʜᴏʀᴛᴇɴᴇʀ – ᴅɪʀᴇᴄᴛ ʟɪɴᴋꜱ, ɴᴏ ᴀᴅꜱ\n"
+                "• ᴘʀᴇᴍɪᴜᴍ ʀᴇQᴜᴇꜱᴛꜱ – ʀᴇQᴜᴇꜱᴛ ᴄᴏɴᴛᴇɴᴛ ᴀɴʏᴛɪᴍᴇ\n"
+                "• ᴏɴᴇ ᴍᴇᴍʙᴇʀꜱʜɪᴘ – ᴀᴄᴄᴇꜱꜱ ᴀʟʟ ᴄʜᴀɴɴᴇʟꜱ\n"
+                "• Qᴜɪᴄᴋ ᴀᴄᴄᴇꜱꜱ – ɪɴꜱᴛᴀɴᴛ ᴄᴏɴᴛᴇɴᴛ ᴏɴ ᴄʟɪᴄᴋ\n"
+                "• ꜰᴀꜱᴛᴇʀ ᴜᴘʟᴏᴀᴅꜱ – ᴘʀɪᴏʀɪᴛʏ ᴄᴏɴᴛᴇɴᴛ ᴅᴇʟɪᴠᴇʀʏ\n\n"
+                f"ᴏᴡɴᴇʀ ɪᴅ: <code>{UPI_ID}</code>\n\n"
+                f"📸ғᴏʀ ʙᴜʏɪɴɢ ᴘʀᴇᴍɪᴜᴍ ᴅᴍ (<a href='{UPI_IMAGE_URL}'>ᴘᴀʏᴍᴇɴᴛ ʟɪɴᴋ</a>)\n"
+                "♻️ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ?\n"
+                "ғᴏʀ ᴘᴀʏᴍᴇɴᴛ ᴅᴍ @Ayanakajiii\n"
+                "<b>ᴡᴇ ʜᴀᴠᴇ ʟɪᴍɪᴛᴇᴅ sᴇᴀᴛs ғᴏʀ ᴘʀɪᴍᴇ ᴜsᴇʀs</b>"
+            ),
             disable_web_page_preview=True,
-            reply_markup = InlineKeyboardMarkup(
-                [   
-                    [
-                        InlineKeyboardButton("Send Payment Screenshot(ADMIN) 📸", url=(SCREENSHOT_URL))
-                    ],
-                    [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
-                    ]
-                ]
-            )
-            )
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("sᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ sᴄʀᴇᴇɴsʜᴏᴛ (ADMIN) 📸", url=SCREENSHOT_URL)],
+                [InlineKeyboardButton("🔒 Close", callback_data="close")]
+            ])
+        )
