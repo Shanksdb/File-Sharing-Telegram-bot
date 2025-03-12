@@ -11,7 +11,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=(
                 "<b> ⟦⟧ Hi There Vro!💫\n"
                 "┏━━━━━━━❪❂❫━━━━━━━━\n"
-                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='http://t.me/Ayanakaji'>Ʉ₦₭Ø₩₦</a>\n"
+                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='http://t.me/Naruto1616'>Ʉ₦₭Ø₩₦</a>\n"
                 "◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/hentai_hindi_dub'>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n"
                 "◈ ʜᴇɴᴛᴀɪ : <a href='https://t.me/+fdYEeYOudS8yMjY1n'>ʜᴇɴᴛᴀɪ</a>\n"
                 "◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href='https://t.me/+McYaSyY87qgyZDNl'>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n"
@@ -51,7 +51,7 @@ async def cb_handler(client, query: CallbackQuery):
                 f"ᴏᴡɴᴇʀ ɪᴅ: <code>{UPI_ID}</code>\n\n"
                 f"📸ғᴏʀ ʙᴜʏɪɴɢ ᴘʀᴇᴍɪᴜᴍ ᴅᴍ (<a href='{UPI_IMAGE_URL}'>ᴘᴀʏᴍᴇɴᴛ ʟɪɴᴋ</a>)\n"
                 "♻️ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ?\n"
-                "ғᴏʀ ᴘᴀʏᴍᴇɴᴛ ᴅᴍ @Ayanakaji\n"
+                "ғᴏʀ ᴘᴀʏᴍᴇɴᴛ ᴅm @Naruto1616\n"
                 "<b>ᴡᴇ ʜᴀᴠᴇ ʟɪᴍɪᴛᴇᴅ sᴇᴀᴛs ғᴏʀ ᴘʀɪᴍᴇ ᴜsᴇʀs</b>"
             ),
             disable_web_page_preview=True,
