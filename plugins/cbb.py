@@ -1,4 +1,4 @@
-from pyrogram import Client
+rom pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 from config import PRICE1, PRICE2, PRICE3, PRICE4, PRICE5, UPI_ID, UPI_IMAGE_URL, SCREENSHOT_URL
@@ -11,10 +11,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=(
                 "<b> ⟦⟧ Hi There Vro!💫\n"
                 "┏━━━━━━━❪❂❫━━━━━━━━\n"
-                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='http://t.me/Naruto1616'>Ʉ₦₭Ø₩₦</a>\n"
-                "◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/hentai_hindi_dub'>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n"
-                "◈ ʜᴇɴᴛᴀɪ : <a href='https://t.me/+fdYEeYOudS8yMjY1n'>ʜᴇɴᴛᴀɪ</a>\n"
-                "◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href='https://t.me/+McYaSyY87qgyZDNl'>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n"
+                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='http://t.me/Naruto1616'>ᴋᴀʀᴛɪᴋ</a>\n"
+                "◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/Eminence_Hentai'>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n"
+                "◈ ʜᴇɴᴛᴀɪ : <a href='https://t.me/+Eminence_Hentai'>ʜᴇɴᴛᴀɪ</a>\n"
+                "◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href='https://t.me/Eminence_Hentai'>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n"
                 "┗━━━━━━━❪❂❫━━━━━━━━</b>"
             ),
             disable_web_page_preview=True,
