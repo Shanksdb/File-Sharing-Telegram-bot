@@ -30,9 +30,9 @@ APP_ID = int(os.environ.get("APP_ID", "28713982"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "237e15f7c006b10b4fa7c46fee7a5377")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002436812797"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002565656378"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "6382307516"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5512860435"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
@@ -63,7 +63,7 @@ USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else F
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "modijiurl.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "6e87bba17c88b9d42683509bcdf878f72240e462")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "0f42c0a0c63ddecdaf38c07a6572a03dcf3a7392")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -114,7 +114,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 #add admins with space seperated
 # 7195990000 289371935 248979023
-ADMIN_LIST = os.environ.get("ADMINS", "5792873052 7195990500").split()
+ADMIN_LIST = os.environ.get("ADMINS", "5512860435 7195990500").split()
 
 
 
