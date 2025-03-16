@@ -81,14 +81,14 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/hentai_hindi_dubbed/72")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT","TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Animated_Series_in_Hindi_Dubbed")
+UPI_ID = os.environ.get("UPI_ID", "𝗗𝗺 - @Ffgmnhgffghh")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://t.me//Animated_Series_in_Hindi_Dubbed")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://t.me//Ffgmnhgffghh")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "49 rs")
+PRICE1 = os.environ.get("PRICE1", "80 rs")
 #1 Month
 PRICE2 = os.environ.get("PRICE2", "199 rs")
 #3 Month
