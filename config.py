@@ -38,7 +38,7 @@ PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://drapixstore:Y7DJWJCCpBQClI5o@cluster0.fq7ee6x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "ayanakajidb1")
+DB_NAME = os.environ.get("DB_NAME", "Mizuhara_Chizuru_RooBot")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
@@ -60,10 +60,10 @@ https://dashboard.shareus.io/
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortxlinks.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "modijiurl.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "6e87bba17c88b9d42683509bcdf878f72240e462")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "437982ff8d264c9f6064a7aad2800afbdf840a77")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
