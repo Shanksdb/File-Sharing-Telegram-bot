@@ -11,7 +11,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=( 
                 "<b> ⟦⟧ Hi There Vro!💫\n" 
                 "┏━━━━━━━❪❂❫━━━━━━━━\n" 
-                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/Harem_network'>Ʉ₦₭Ø₩₦</a>\n" 
+                "◈ ᴄʀᴇᴀᴛᴏʀ: <a href='https://t.me/Naruto1616'>Ʉ₦₭Ø₩₦</a>\n" 
                 "◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href='https://t.me/Eminence_Hentai'>ᴄᴜʟᴛᴜʀᴇᴅ</a>\n" 
                 "◈ ʜᴇɴᴛᴀɪ : <a href='https://t.me/Eminence_Hentai'>ʜᴇɴᴛᴀɪ</a>\n" 
                 "◈ɪɴᴅɪᴀɴ ʟᴇᴀᴋs: <a href='https://t.me/+6iI6SxAME7U5NGE0'>ɪɴᴅɪᴀɴ ʟᴇᴀᴋs</a>\n" 
